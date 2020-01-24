@@ -22,11 +22,12 @@ li, button,label,input,p {
 }
 
 h2 {
-    font-size: 4.8rem;
+    font-size: 5.4rem;
+    /* letter-spacing: 0.2rem; */
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 3.3rem;
     font-weight: normal;
 }
 
@@ -90,7 +91,7 @@ nav ul {
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5),transparent) ,url("./img/landing-page.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5),transparent) ,url("./img/road2.jpg");
     min-height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,7 +112,7 @@ nav ul {
 
 #locations {
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5),transparent), 
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent), 
     url('./img/new-york-page.png');
     background-size: cover;
     background-position: center;
@@ -128,11 +129,14 @@ nav ul {
 
 .locations-head h2 {
     padding: 1rem 0rem;
-    text-decoration: underline;
+    color: #54363B;
+    font-weight: bold;
+    
 }
 
 .locations-head h3 {
     padding: 4rem 0rem;
+    color: white;
      
 }
 
@@ -166,10 +170,10 @@ nav ul {
 
 /* Benefits section */
 
-.benefits-head {
+.deals-head {
     background:#343c44;
-    padding: 3rem;
-    min-height: 30vh;
+    padding: 5rem;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,14 +182,14 @@ nav ul {
     text-align: center;
 }
 
-.benefits-head h3 {
+.deals-head h3 {
     padding: 1rem;
 }
 .cards {
     width: 90%;
     margin: auto;
     display: flex;
-    min-height: 70vh;
+    min-height: 80vh;
     align-items: center;
     flex-wrap: wrap;
 
@@ -197,12 +201,30 @@ nav ul {
     flex: 1 1 25rem;
     min-height: 40vh;
     margin: 2rem 5rem;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1), 0px 20px 20px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.3), 0px 20px 20px rgba(0,0,0,0.3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    
 }
 
-.cards img {
-   max-width: 15%;
-   margin: 2rem;
+.card3 {
+    background: linear-gradient(rgba(0,0,0,0.7),transparent), url(./img/france2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card1 {
+    background: linear-gradient(rgba(0,0,0,0.7),transparent), url(./img/newyork2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card2 {
+    background: linear-gradient(rgba(0,0,0,0.7),transparent), url(./img/italy.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .card h4,
@@ -210,15 +232,27 @@ nav ul {
     padding: 3rem;
 }
 
-.card-icon {
-    background: #27394e;
+.tag {
+    font-size: 6rem;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+    margin: auto;
+}
+
+.price {
+    font-size: 3rem;
+    background: yellow;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    padding: 0rem 2rem;
 }
 
 /* Form Section */
 
 #contact {
     min-height: 100vh;
-    background: url("./img/contact-mountain.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(0,0,0,0.5),transparent),
