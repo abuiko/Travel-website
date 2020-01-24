@@ -132,6 +132,7 @@ nav ul {
     color: #54363B;
     font-weight: bold;
     
+    
 }
 
 .locations-head h3 {
@@ -256,7 +257,7 @@ nav ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(0,0,0,0.5),transparent),
-    url("./img/contact-mountain.png");
+    url("./img/contact-mount.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
