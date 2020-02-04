@@ -1,64 +1,6 @@
-/*Global Styles*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html { 
-    font-size: 62.5%;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-h1 {
-    font-size: 2.6rem;
-}
-li, button,label,input,p {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 5.4rem;
-    /* letter-spacing: 0.2rem; */
-}
-
-h3 {
-    font-size: 3.3rem;
-    font-weight: normal;
-}
-
-h4,h5 {
-    font-size: 2.8rem;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-button {
-    padding: 2rem 6rem;
-    background: #4c6e97;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-    transition: background 0.5s ease-in-out;
-}
-
-button:hover {
-    background: #27394e;
-}
-
-
-/* Nav section with HERO */
 
 .main-head {
-    background: #131c27;
+    background: $primary;
     color: white;
     position: sticky;
     top: 0px;
@@ -75,14 +17,16 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     
-}
-nav ul {
+    ul {
+        
     display: flex;
     flex: 1 1 40rem;
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    }
 }
+
 
 #logo {
     flex: 1 1 40rem;
@@ -91,29 +35,26 @@ nav ul {
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5),transparent) ,url("./img/road7.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5),transparent) ,url("/img/road7.jpg");
     min-height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+    @include flex(column, center, center);
+    
+    h3 {
+        padding: 5rem;
+    }
 }
 
-.hero h3 {
-    padding: 5rem;
-}
-
-/* Locations Section */
+/* LOCATIONS SECTION*/
 
 #locations {
     min-height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.3),transparent), 
-    url('./img/new-york-page.png');
+    url('/img/new-york-page.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -125,21 +66,21 @@ nav ul {
 .locations-head {
     width: 90%;
     margin: auto;
+
+    h2 {
+        padding: 1rem 0rem;
+        color: white;
+        font-weight: bold;
+        color: $primary;
+    }
+
+    h3 {
+        padding: 4rem 0rem;
+        color: $primary; 
+    }
 }
 
-.locations-head h2 {
-    padding: 1rem 0rem;
-    color: #54363B;
-    font-weight: bold;
-    
-    
-}
-
-.locations-head h3 {
-    padding: 4rem 0rem;
-    color: white;
-     
-}
+/*ANIMATION*/ 
 
 .cloud {
     position: absolute;
@@ -153,7 +94,7 @@ nav ul {
 }
 
 .moving-cloud-2 {
-    top: 20%;
+    top: 10%;
     z-index: -1;
     opacity: 0.5;
     animation: cloudAnimation 3s infinite alternate ease-in-out;
@@ -169,23 +110,22 @@ nav ul {
 }
 
 
-/* Benefits section */
+/* BENEFITS SECTION */
 
 .deals-head {
     background:#343c44;
     padding: 5rem;
     min-height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: white;
-    text-align: center;
+
+    @include flex(column, center, center); 
+
+    h3 {
+        padding: 1rem;
+    }
 }
 
-.deals-head h3 {
-    padding: 1rem;
-}
+
 .cards {
     width: 90%;
     margin: auto;
@@ -205,25 +145,24 @@ nav ul {
     box-shadow: 0px 10px 10px rgba(0,0,0,0.3), 0px 20px 20px rgba(0,0,0,0.3);
     position: relative;
     display: flex;
-    align-items: center;
-    
-    
-}
-
-.card3 {
-    background: linear-gradient(rgba(0,0,0,0.7),transparent), url(./img/france2.jpg);
-    background-position: center;
-    background-size: cover;
+    align-items: center;    
 }
 
 .card1 {
-    background: linear-gradient(rgba(0,0,0,0.7),transparent), url(./img/newyork2.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),transparent), url("/img/newyork2.jpg");
     background-position: center;
     background-size: cover;
 }
 
+
 .card2 {
-    background: linear-gradient(rgba(0,0,0,0.7),transparent), url(./img/italy.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),transparent), url("/img/italy.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card3 {
+    background: linear-gradient(rgba(0,0,0,0.7),transparent), url("/img/france2.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -250,14 +189,14 @@ nav ul {
     padding: 0rem 2rem;
 }
 
-/* Form Section */
+/* FORM SECTION */
 
 #contact {
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(0,0,0,0.5),transparent),
-    url("./img/contact-mount.jpg");
+    url("/img/contact-mount.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,10 +204,26 @@ nav ul {
 }
 
 .form-wrapper {
-    background: rgba(19,28,39,0.8);
-    width: 60%;
+    background: rgba(19,28,39,0.7);
+    width: 40%;
     color: white;
     border-radius: 20px;
+
+    label {
+        margin: 0rem 3rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 2rem;
+        margin-top: 8rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    input {
+        padding: 1rem 3rem;
+    }
 
 }
 
@@ -282,24 +237,24 @@ nav ul {
     text-align: center;
 }
 
-.form-wrapper label {
-    margin: 0rem 3rem;
-}
 
-.form-wrapper button {
-    width: 100%;
-    padding: 2rem;
-    margin-top: 8rem;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
+/* FOOTER SECTION */
 
-.form-wrapper input {
-    padding: 1rem 3rem;
-}
 footer {
     color: white;
     background: rgba(19,28,39,1);
+
+    h5 {
+        flex: 1 1 40rem;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        flex: 1 1 40rem;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .footer-wrapper {
@@ -310,17 +265,6 @@ footer {
     align-items: center;
     min-height: 10vh;
     flex-wrap: wrap;
-}
-footer h5 {
-    flex: 1 1 40rem;
-}
-
-footer ul {
-    display: flex;
-    list-style: none;
-    flex: 1 1 40rem;
-    justify-content: space-between;
-    align-items: center;
 }
 
 
