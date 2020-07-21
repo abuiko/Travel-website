@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -73,11 +73,11 @@ button:hover {
 
 nav {
   min-height: 10vh;
-  padding: 4rem 0rem 3rem 0rem;
+  padding: 4rem 3rem 3rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 95%;
   margin: auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -121,7 +121,7 @@ span {
 
 /* LOCATIONS SECTION*/
 #locations {
-  min-height: 100vh;
+  min-height: 90vh;
   background-image: url("../img/new-york-page.png"),
     -webkit-gradient(linear, left top, left bottom, from(rgba(197, 216, 227, 0.9)), to(transparent));
   background-image: url("../img/new-york-page.png"),
@@ -147,34 +147,35 @@ span {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  margin-left: 15rem;
+  margin-left: 20rem;
 }
 
 .locations-head h1 {
   color: white;
   font-weight: normal;
-  font-size: 7rem;
+  font-size: 5.4rem;
   line-height: 13rem;
   color: black;
   letter-spacing: 0.8rem;
+  box-shadow: #312a2a;
 }
 
 .locations-head button {
   background: #74989f;
-  width: 54%;
-  padding: 3rem;
+  width: 40%;
+  padding: 2.5rem;
   border-radius: 2rem;
 }
 
 .locations-head button:hover {
-  border: 2px solid white;
+  background: #27394e;
 }
 
 .locations-head button a {
   color: white;
   font-weight: bold;
   letter-spacing: 0.4rem;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
 }
 
 /*ANIMATION*/
@@ -245,8 +246,8 @@ span {
 }
 
 .about-text p {
-  line-height: 5.5rem;
-  font-size: 2.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
   text-align: justify;
 }
 
@@ -261,8 +262,8 @@ span {
 
 .map-text {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 40rem;
-  flex: 1 1 40rem;
+  -ms-flex: 1 1 70rem;
+  flex: 1 1 70rem;
   background: #f9f9f7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,24 +281,27 @@ span {
 }
 
 .map-text h2 {
-  padding: 2rem;
+  padding: 4rem;
   color: black;
   font-weight: normal;
-  letter-spacing: 0.2rem;
+  text-align: center;
+  /* letter-spacing: 0.2rem; */
   margin: 2rem;
+  font-size: 5rem;
 }
 
 .map-text p {
   margin: 2rem;
-  padding: 2rem;
+  padding: 4rem;
   color: #312a2a;
   text-align: justify;
+  font-size: 2rem;
 }
 
 .map-image {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 40rem;
-  flex: 1 1 40rem;
+  -ms-flex: 1 1 30rem;
+  flex: 1 1 30rem;
   background-image: url("../img/map.png");
   background-position: center;
   background-size: cover;
