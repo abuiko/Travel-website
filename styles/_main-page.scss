@@ -25,9 +25,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    a {
-      letter-spacing: 0.2rem;
-    }
+  }
+  a {
+    letter-spacing: 0.2rem;
   }
 }
 
@@ -81,9 +81,6 @@ span {
     }
   }
 }
-
-/*ANIMATION*/
-
 .cloud {
   position: absolute;
   top: 0%;
@@ -109,9 +106,6 @@ span {
     transform: translate(0%, 0%);
   }
 }
-
-// ABOUT SECTION
-
 #about {
   min-height: 100vh;
   display: flex;
@@ -236,9 +230,6 @@ span {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-/* FORM SECTION */
-
 #contact {
   min-height: 100vh;
   background-size: cover;
@@ -290,6 +281,10 @@ footer {
   min-height: 10vh;
   justify-content: flex-end;
   align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* MEDIA QUERY */

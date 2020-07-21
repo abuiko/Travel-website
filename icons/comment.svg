@@ -8,7 +8,7 @@
 <path d="M341.5 140.5C341.5 214.781 266.98 276.5 173 276.5C79.0198 276.5 4.5 214.781 4.5 140.5C4.5 66.219 79.0198 4.5 173 4.5C266.98 4.5 341.5 66.219 341.5 140.5Z" stroke="white" stroke-width="9"/>
 <defs>
 <clipPath id="clip0">
-<rect x="86" y="47" width="174" height="160" fill="white"/>
+<rect x="86" y="47" width="174" height="160" fill="#74989f"/>
 </clipPath>
 </defs>
 </svg>
