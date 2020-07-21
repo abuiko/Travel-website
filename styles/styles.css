@@ -412,7 +412,7 @@ span {
   background-repeat: no-repeat;
   background-image: url("../img/contact-mountain.png"),
     -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent));
-  background-image: url("img/contact-mountain.png"),
+  background-image: url("../img/contact-mountain.png"),
     linear-gradient(rgba(0, 0, 0, 0.3), transparent);
   display: -webkit-box;
   display: -ms-flexbox;
